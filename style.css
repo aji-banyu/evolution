@@ -262,6 +262,81 @@ button:hover {
   margin: 1rem 0 1rem;
 }
 
+.services-box .read-more-cont {
+  display: none;
+}
+
+.popup-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-box.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-box .popup-content {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.popup-box .popup-header {
+  padding: 15px 40px 15px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.popup-box .popup-header h3 {
+  margin: 0;
+  color: red;
+  font-size: 20px;
+}
+.popup-box .popup-header .popup-close-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #555;
+  font-size: 28px;
+  line-height: 30px;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.popup-box .popup-body {
+  padding: 15px;
+}
+.popup-box .popup-body p {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 15px;
+}
+.popup-box .popup-footer {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+.popup-box .popup-footer .btn {
+  padding: 8px 15px;
+  border: 1px solid #555;
+  color: #555;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 65%;
