@@ -285,7 +285,7 @@ button:hover {
 }
 
 .popup-box .popup-content {
-  background-color: #fff;
+  background-color: #323946;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -299,7 +299,7 @@ button:hover {
 }
 .popup-box .popup-header h3 {
   margin: 0;
-  color: red;
+  color: #e6c619;
   font-size: 20px;
 }
 .popup-box .popup-header .popup-close-icon {
@@ -307,7 +307,8 @@ button:hover {
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #555;
+  /* background-color: #e6c619; */
+  color: #e6c619;
   font-size: 28px;
   line-height: 30px;
   right: 5px;
@@ -316,10 +317,12 @@ button:hover {
 }
 .popup-box .popup-body {
   padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 .popup-box .popup-body p {
   font-size: 16px;
-  color: #555;
+  color: #ddd;
   margin: 0 0 15px;
 }
 .popup-box .popup-footer {
@@ -327,15 +330,14 @@ button:hover {
   border-top: 1px solid #ddd;
   text-align: right;
 }
-.popup-box .popup-footer .btn {
+/* .popup-box .popup-footer .btn {
   padding: 8px 15px;
   border: 1px solid #555;
   color: #555;
   font-size: 16px;
-  background: transparent;
   cursor: pointer;
   border-radius: 4px;
-}
+} */
 
 @media (max-width: 1200px) {
   html {

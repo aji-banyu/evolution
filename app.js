@@ -34,6 +34,12 @@ serviceItems.addEventListener("click", (e) => {
 popupCloseBtn.addEventListener("click", popupBox);
 popupCloseIcon.addEventListener("click", popupBox);
 
+popup.addEventListener("click", (e) => {
+  if (e.target == popup) {
+    popupBox();
+  }
+});
+
 function popupBox() {
   popup.classList.toggle("open");
 }
