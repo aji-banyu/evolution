@@ -10,6 +10,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css custom -->
     <link rel="stylesheet" href="style.css" />
     <title>Evolution</title>
@@ -44,7 +46,7 @@
         </div>
         <a href="https://linkbio.co/6072804jdPo8e" target="_blank"><button>Order Here!</button></a>
       </div>
-      <div class="home-img">
+      <div class="home-img"  data-aos="fade-left">
         <img src="images/png.png" alt="" />
       </div>
     </section>
@@ -52,7 +54,7 @@
     <!-- about section -->
     <section id="about">
       <div class="about-img">
-        <img src="images/evolution.cncpt.png" alt="" />
+        <img src="images/png.png" alt="" />
       </div>
       <div class="about-content">
         <h1>About <span>Me</span></h1>
@@ -85,22 +87,22 @@
             Kami siap mewujudkan ide kreatifmu jadi kaos yang unik dan standout. Cocok untuk komunitas, acara spesial, atau bisnis. Desain profesional, kualitas tinggi, dan harga ramah di kantong. 
           </p>
           <div class="read-more-cont">
-            <p>Kaos Lo, Cerita Lo. Gaya Lo. 🎨
+            <p>Kaos Lo, Cerita Lo. Gaya Lo. 🎨</p>
 
-              Pernah ngerasa bosen sama kaos-kaos yang desainnya gitu-gitu aja? Saatnya bikin kaos yang beda, unik, dan 100% LO BANGET!
+              <p>Pernah ngerasa bosen sama kaos-kaos yang desainnya gitu-gitu aja? Saatnya bikin kaos yang beda, unik, dan 100% LO BANGET!</p>
               
-              Kami hadir untuk ngerjain semua ide lo jadi desain kaos yang keren dan standout. Apa pun konsep lo—minimalis, bold, warna-warni, atau ada quotes favorit—kami wujudkan jadi karya seni yang bikin lo bangga.
+              <p> hadir untuk ngerjain semua ide lo jadi desain kaos yang keren dan standout. Apa pun konsep lo—minimalis, bold, warna-warni, atau ada quotes favorit—kami wujudkan jadi karya seni yang bikin lo bangga.</p>
               
-              🔥 Kenapa harus pilih kita?
-              ✔ Custom desain sesuai keinginan lo.
-              ✔ Desain fresh & kekinian, anti mainstream.
-              ✔ Cocok buat personal style, komunitas, event, atau bisnis lo.
-              ✔ Kualitas terbaik, harga tetap ramah di kantong.
+              <P>🔥 Kenapa harus pilih kita?</P>
+              <p>✔ Custom desain sesuai keinginan lo.</p>
+              <p>✔ Desain fresh & kekinian, anti mainstream.</p>
+              <p>✔ Cocok buat personal style, komunitas, event, atau bisnis lo.</p>
+              <p>✔ Kualitas terbaik, harga tetap ramah di kantong.</p>
               
-              Kaos lo nggak cuma pakaian biasa. Ini media lo untuk cerita, tampil beda, dan jadi pusat perhatian. So, tunggu apa lagi?
+              <p>Kaos lo nggak cuma pakaian biasa. Ini media lo untuk cerita, tampil beda, dan jadi pusat perhatian. So, tunggu apa lagi?</p>
               
-              💬 Chat kami sekarang, mulai dari ide kecil sampai jadi kaos yang luar biasa.
-              Kaos lo, rules lo. Let’s create something epic!</p>
+              <p>💬 Chat kami sekarang, mulai dari ide kecil sampai jadi kaos yang luar biasa.</p>
+              <p>Kaos lo, rules lo. Let’s create something epic!</p>
           </div>
           <button class="btn">Read More</button>
         </div>
@@ -150,6 +152,45 @@
       </div>
      </div>
     <!-- read more popupbox end -->
+
+    <!-- contact me section start -->
+     <section id="contact">
+       <div class="contact-header">
+         <h1>Contact <span>Me!</span></h1>
+        </div>
+        <div class="contact-container">
+        <form action="">
+          <div class="row"> 
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email address" id="email">
+          </div>
+          <div class="row">
+            <input type="number" placeholder="Phone number" id="phone-number">
+            <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="row">
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <button id="kirim-pesan">Kirim!</button>
+        </form>
+      </div>
+    </section>
+    <!-- contact me section end -->
+    <footer>
+      <p>Copyright &copy; 2024 by BNWnew</p>
+      <div class="up">
+        <a href="#hero"><span class="material-symbols-outlined">
+          arrow_upward
+          </span></a>
+        
+      </div>
+    </footer>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600, 
+      });
+    </script>
   </body>
 </html>

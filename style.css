@@ -276,7 +276,7 @@ button:hover {
   z-index: 900;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .popup-box.open {
@@ -339,6 +339,93 @@ button:hover {
   border-radius: 4px;
 } */
 
+#contact h1 {
+  font-size: 3.7rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#contact .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .row {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+form input {
+  width: 100%;
+  height: 5rem;
+  padding: 8px 10px;
+  background-color: #323946;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+form input ::placeholder {
+  color: #fff;
+}
+
+form textarea {
+  width: 100%;
+  height: 15rem;
+  outline: none;
+  border: none;
+  background-color: #323946;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  resize: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+footer {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #323946;
+  position: ;
+  margin-bottom: 0;
+  padding: 0.3rem 7rem;
+}
+footer .up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  background-color: #e6c619;
+  border-radius: 8px;
+}
+footer .up span {
+  color: #000;
+  font-weight: 800;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 65%;
@@ -363,7 +450,7 @@ button:hover {
     flex-direction: column;
     background-color: #323946;
     top: 7.5rem;
-    right: 5rem;
+    right: 1rem;
     width: 50%;
     text-align: center;
     padding: 0;
@@ -446,4 +533,7 @@ button:hover {
     font-size: 1.3rem;
     margin: 1
   } */
+  .popup-box .popup-content {
+    width: 85%;
+  }
 }

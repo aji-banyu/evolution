@@ -13,6 +13,8 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+
 // read more function
 const serviceItems = document.querySelector(".services-container");
 const popup = document.querySelector(".popup-box");
@@ -31,9 +33,11 @@ serviceItems.addEventListener("click", (e) => {
   }
 });
 
+// function tombol close
 popupCloseBtn.addEventListener("click", popupBox);
 popupCloseIcon.addEventListener("click", popupBox);
 
+// klik di luar atau selain tombol close maka popup akan hilang
 popup.addEventListener("click", (e) => {
   if (e.target == popup) {
     popupBox();
@@ -43,3 +47,30 @@ popup.addEventListener("click", (e) => {
 function popupBox() {
   popup.classList.toggle("open");
 }
+console.log(popup);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone-number");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+
+const pesanBtn = document.getElementById("kirim-pesan");
+// console.log(message);
+// console.log(name);
+// console.log(email);
+// console.log(phone);
+// console.log(subject);
+// console.log(pesanBtn);
+
+pesanBtn.addEventListener("click", (e) => {
+  console.log(message.value);
+  console.log(name.value);
+  console.log(email.value);
+  console.log(phone.value);
+  console.log(subject.value);
+  console.log(pesanBtn.value);
+  e.preventDefault();
+});
